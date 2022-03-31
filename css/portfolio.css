@@ -18,10 +18,17 @@ body {
     color: var(--text-color);
     letter-spacing: -1px;
 }
+#wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
 header {
+    width: 100%;
     height: 90px;
-    height: 10vh;
-    line-height: 10vh;
+    line-height: 90px;
+    /* height: 10vh; */
+    /* line-height: 10vh; */
     background-color: var(--background-color);
     color: var(--h-color);
     padding: 0 5%;
@@ -29,6 +36,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
 }
 /* LOGO */
 h1 {
@@ -36,12 +48,12 @@ h1 {
 }
 h1>a {
     font-size: 36px;
-    font-size: 4.5vh;
+    /* font-size: 4.5vh; */
     margin-right: 16px;
 }
 h1>p {
     font-size: 24px;
-    font-size: 3vh;
+    /* font-size: 3vh; */
 }
 
 /* GNB */
@@ -54,9 +66,8 @@ h1>p {
     padding: 0 12px;
     font-size: 21px;
 }
-#gnb ul li:hover {
-    background-color: var(--accent-color);
-    border-radius: 4px;
+#gnb ul li a:hover {
+    border-bottom: 4px solid #f0f4f5;
 }
 
 
@@ -67,22 +78,22 @@ h1>p {
     right: 32px;
     top: 0;
     z-index: 99;
-    font-size: 3vh;
+    font-size: 24px;
+    /* font-size: 3vh; */
     /* 공통 영역에서 안 보이도록 */
     display: none;
 }
 
 /* 2. Section */
 section {
-    width: 100vh;
+    width: 1440px;
     height: 100%;
+    margin: 0 auto;
 }
 .aboutme {
     width: 1440px;
-    margin: 0 auto;
     height: 800px;
-    margin-left: 80px;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .l_am {
     width: 720px;
@@ -121,17 +132,167 @@ section {
     left: 50%;
 }
 /* SKILLS */
+.skills { 
+    margin-top: 190px;
+    width: 100%;
+    height: 100%;
+}
+.sk_top {
+    height: 872px;
+}
+.sk_icon {
+    margin-bottom: 30px;
+}
+.sk_icon img {
+    width: 220px;
+}
+.sk_text h2 {
+    font-size: 42px;
+    margin-bottom: 34px;
+}
+.sk_text p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.sk_left {
+    width: 720px;
+    /* 플롯 */
+    float: left;
+}
+.sk_right {
+    width: 720px;
+    /* 플롯 */
+    float: right;
+}
+.sk_right h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.sk_right p {
+    font-size: 24px;
+}
+.sk_right .html5,
+.sk_right .css3,
+.sk_right .js {
+    /* 플렉스 */
+    display: flex;
+    margin-bottom: 80px;
+}
+.sk_right img {
+    width: 100px;
+    height: 100px;
+}
+.sk_right .html5>div,
+.sk_right .css3>div,    
+.sk_right .js>div { 
+    margin-left: 32px;
+}
+.sk_right .js .vue {
+    margin-top: 40px;
+}
+.sk_bottom {
+    height: 872px;
+    margin: 0 160px;
+}
+.sk_bottom .sk_design {
+    width: 900px;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.sk_bottom img {
+    width: 100px;
+}
+.sk_bottom p {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+.sk_design {
+    margin-bottom: 70px;
+}
+.sk_design div img {
+    margin-bottom: 36px;
+}
+.sk_ms img {
+    margin-right: 240px;
+    margin-bottom: 36px;
+}
 
-
-
-
-
-
-
-
-
-
-
+/* PORTFOLIO */
+.portfolio {
+    width: 100%;
+    height: 100%;
+}
+.publising,
+.design {
+    width: 100%;
+    height: 100%;
+}
+.publising h2,
+.design h2 {
+    height: 64px;
+    line-height: 64px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    margin-bottom: 42px;
+}
+.mockupimg {
+    width: 700px;
+    height: 440px;
+    /* 플롯 */
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 160px;
+}
+.mockupimg img {
+    width: 100%;
+}
+.info {
+    width: 700px;
+    height: 440px;
+    /* 플롯 */
+    float: right;
+    padding: 80px 0 0 40px;
+    margin-bottom: 160px;
+}
+.info h3 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.info p:nth-child(2) {
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-left: 8px;
+}
+.info p:nth-child(3) {
+    font-size: 18px;
+    margin-bottom: 54px;
+    margin-left: 8px;
+}
+.info .btn .proposal a,
+.info .btn .direct a {
+    display: block;
+    width: 170px;
+    height: 52px;
+    line-height: 48px;
+    text-align: center;
+    border: 4px solid var(--accent-color);
+    border-radius: 40px;
+    font-size: 18px;
+    /* 플롯 */
+    float: left;
+    margin-right: 44px;
+}
+.info .btn .proposal a:hover,
+.info .btn .direct a:hover {
+    background-color: var(--accent-color);
+    border: 4px solid var(--h-color);
+    color: var(--h-color);
+}
 
 
 
