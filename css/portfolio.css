@@ -1,0 +1,176 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 뷰포트 내 마음 속의 기준값 : 1440x800 */
+/* 가상클래스 root 사용 : 유지 보수에 용이하다 */
+:root {
+    --text-color: #434343;
+    --background-color: #03318C;
+    --accent-color: #21038B;
+    --h-color: #f0f4f5;
+}
+body {
+    font-family: 'GmarketSansMedium','Noto Sans KR',sans-serif;
+    color: var(--text-color);
+    letter-spacing: -1px;
+}
+header {
+    height: 90px;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: var(--background-color);
+    color: var(--h-color);
+    padding: 0 5%;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+/* LOGO */
+h1 {
+    display: flex;
+}
+h1>a {
+    font-size: 36px;
+    font-size: 4.5vh;
+    margin-right: 16px;
+}
+h1>p {
+    font-size: 24px;
+    font-size: 3vh;
+}
+
+/* GNB */
+#gnb ul {
+    /* 플렉스 */
+    display: flex;
+    text-align: center;
+}
+#gnb ul li {
+    padding: 0 12px;
+    font-size: 21px;
+}
+#gnb ul li:hover {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}
+
+
+/* Hamburger Menu */
+.ham {
+    /* 포지션 : 위치기준값 없으면 body에 relative됨 */
+    position: absolute;
+    right: 32px;
+    top: 0;
+    z-index: 99;
+    font-size: 3vh;
+    /* 공통 영역에서 안 보이도록 */
+    display: none;
+}
+
+/* 2. Section */
+section {
+    width: 100vh;
+    height: 100%;
+}
+.aboutme {
+    width: 1440px;
+    margin: 0 auto;
+    height: 800px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.l_am {
+    width: 720px;
+    /* 플롯 */
+    float: left;
+}
+.l_am .am_icon {
+    width: 220px;
+    margin-bottom: 60px;
+}
+.l_am .am_icon img {
+    width: 100%;
+}
+.l_am .am_text h2,
+.l_am .am_text p {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+}
+.r_am {
+    width: 720px;
+    /* 플롯 */
+    float: right;
+    padding-left: 80px;
+}
+.r_am img {
+    width: 80%;
+}
+.am_line {
+    display: block;
+    width: 4px;
+    height: 140px;
+    background-color: #000;
+    clear: both;
+    position: relative;
+    left: 50%;
+}
+/* SKILLS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 태블릿용 미디어쿼리 768px 이하 */
+@media screen and (max-width:768px){
+    header {
+        padding: 0;
+        /* 플렉스 */
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        width: 100%;
+    }
+    /* LOGO */
+    h1 {
+        padding-left: 32px;
+    }
+    /* GNB */
+    #gnb {
+        width: 100%;
+    }
+    #gnb ul {
+        /* 플렉스 */
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    #gnb ul li {
+        width: 100%;
+        padding: 0;
+    }
+    /* Hamburger Menu */
+    .ham {
+        display: block;
+    }
+
+    /* 스크립트 CSS */
+    #gnb.active ul {
+        /* display: none;의 반대 */
+        display: flex;
+    }
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* 1. Apple 제품 => 내장된 SF 폰트 = 기업마다 시스템 기본 폰트 사용 */
+
+/* Safari => SF 한글/영문 폰트 | Firefox => SF 영문 폰트
+a. -apple-system => Chrome 계열 SF 한글/영문 폰트 사용 시
+b. BlinkMacSystemFont => Firefox SF 한글(산돌고딕네오) 폰트 사용 시
+c. Apple SD Gothic Neo */
+
+/* Apple에서 사용된 System Fonts */
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* font-face로 설정 */
+/* @font-face {
+    font-family: system;
+    font-style: none;
+    font-weight: 300;
+    src: local("./font/SFNSText-Light.ttf"), 
+    local("./font/HelveticaNeueDeskInterface-Light.ttf"), 
+    local("./font/LucidaGrandeUI.ttf"), 
+    local("./font/Ubuntu-Light.ttf"), 
+    local("./font/SegoeUILight.ttf"), 
+    local("./font/Roboto-Light.ttf"), 
+    local("./font/DroidSans.ttf"), 
+    local("./font/Tahoma.ttf");
+}
+body {
+    font-family: system;
+} */

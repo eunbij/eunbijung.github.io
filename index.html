@@ -1,1 +1,174 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ebjj">
+    <meta name="description" content="포트폴리오 페이지">
+    <title>정은비 포트폴리오 페이지</title>
+    <!-- Meta Data : FaceBook-->
+    <meta property="og:image" content="./images">
+    <meta property="og:title" content="portfolio">
+    <meta property="og:description" content="personal portfolio page">
+    <meta property="og:url" content="eunbij.github.io">
+    <meta property="og:locale" content="ko-KR">
+    <meta property="og:site_name" content="정은비 포트폴리오 페이지">
+    <meta property="og:type" content="portfolio">
+    <!-- BootStrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Favicon PC / Mobile -->
+    <link rel="shortcut icon" href="./images/">
+    <link rel="apple-touch-icon-precomposed" href="./images/">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- System Font CSS(optional) -->
+    <!-- <link rel="stylesheet" href="./css/system_font.css"> -->
+    <!-- No Scrollbar CSS -->
+    <!-- <link rel="stylesheet" href="./css/no_scrollbar.css"> -->
+    <!-- 프로젝트 페이지 CSS -->
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <!-- HTML5 JS File -->
+    <script src="./js/html5shiv.js"></script>
+    <script src="./js/respond.src.js"></script>
+    <!-- JQ PlugIn -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- PreFix Free -->
+    <script src="./js/prefixfree.min.js"></script>
+
+    <!-- 프로젝트 페이지 SCRIPT -->
+    <script src="./js/portfolio.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1. Header -->
+        <header>
+            <!-- LOGO -->
+            <h1>
+                <p>정은비 포트폴리오</p>
+            </h1>
+            <!-- /LOGO -->
+            <!-- GNB -->
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- /GNB -->
+            <!-- LNB -->
+            <!-- Hamburger Menu -->
+            <a href="#" class="ham"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <!-- /Hamburger Menu -->
+        </header>
+        <!-- /1. Header -->
+        <!-- 2. Section -->
+        <section>
+            <!-- ABOUT ME -->
+            <div class="aboutme cf" id="aboutme">
+                <div class="l_am">
+                    <div class="am_icon">
+                        <img src="./images/smiling.png" alt="프로필아이콘">
+                    </div>
+                    <div class="am_text">
+                        <h2>안녕하세요.</h2>
+                        <p>웹퍼블리셔 정은비입니다.</p>
+                        <p>포트폴리오 페이지에 오신 걸 환영합니다.</p>
+                    </div>
+                </div>
+                <div class="r_am">
+                    <img src="./images/circle.png" alt="프로필이미지">
+                </div>
+                <div class="am_line"></div>
+            </div>
+            <!-- /ABOUT ME -->
+            <!-- SKILLS -->
+            <div class="skills" id="skills">
+                <div class="sk_top">
+                    <div class="sk_left">
+                        <div class="sk_icon">
+                            <img src="./images/steps.png" alt="스킬아이콘">
+                        </div>
+                        <div class="sk_text">
+                            <h2>SKILLS</h2>
+                            <p>2022.01. 웹디자인기능사 필기 합격</p>
+                            <p>2022.01. 컴퓨터그래픽스운용기능사 필기 합격</p>
+                        </div>
+                    </div>
+                    <div class="sk_right">
+                        <div class="html5">
+                            <img src="./images/html-5.png" alt="HTML5">
+                            <div>
+                                <h3>HTML5</h3>
+                                <p>시맨틱 태그를 이용하여 구조를 코딩할 수 있습니다.</p>
+                                <p>웹 접근성에 기반하는 작업에 관심이 높습니다.</p>
+                            </div>
+                        </div>
+                        <div class="css3">
+                            <img src="./images/css-3.png" alt="CSS3">
+                            <div>
+                                <h3>CSS3</h3>
+                                <p>CSS를 이용하여 효과를 구현할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="js">
+                            <img src="./images/java-script.png" alt="javaScript">
+                            <div>
+                                <h3>javaScript&amp;jQuery</h3>
+                                <p>javaScript를 이용한 동적 효과를 구현할 수 있습니다.</p>
+                                <p>jQuery 세팅과 원리 및 플러그인을 사용할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="vue">
+                            <div>
+                                <h3>Vue.js</h3>
+                                <p>Vue.js의 설치 방법 및 기초 원리를 알고 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sk_bottom">
+                    <div class="psd">
+                        <img src="./images/photoshop.png" alt="포토샵">
+                        <p>ADOBE PHOTOSHOP</p>
+                    </div>
+                    <div class="ai">
+                        <img src="./images/illustrator.png" alt="일러스트레이터">
+                        <p>ADOBE ILLUSTRATOR</p>
+                    </div>
+                    <div class="xd">
+                        <img src="./images/xd.png" alt="XD">
+                        <p>ADOBE XD</p>
+                    </div>
+                    <div>
+                        <img src="./images/word.png" alt="MS워드">
+                        <img src="./images/excel.png" alt="MS엑셀">
+                        <img src="./images/powerpoint.png" alt="MS파워포인트">
+                        <p>MS Word, Ms Excels, Ms Powerpoint를 비롯한 문서 작성 툴을
+                            능숙하게 사용할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /SKILLS -->
+            <!-- PORTFOLIO -->
+            <div class="portfolio" id="portfolio">
+
+            </div>
+            <!-- /PORTFOLIO -->
+            <!-- CONTACT -->
+            <div class="contact" id="contact">
+
+            </div>
+            <!-- /CONTACT -->
+        </section>
+        <!-- /2. Section -->
+    </div>
+</body>
+</html>
