@@ -3,7 +3,6 @@ window.onload = ()=>{
     // DOM 객체 변수할당
     const ham_btn = document.querySelector('.ham');
     const gnb = document.querySelector('#gnb');
-    console.log(gnb);
 
     // 이벤트리스너
     ham_btn.addEventListener('click',()=>{
