@@ -23,6 +23,10 @@ body {
     height: 100%;
     margin: 0 auto;
 }
+.h120 {
+    height: 120px;
+}
+/* 1. Header */
 header {
     width: 100%;
     height: 90px;
@@ -65,9 +69,23 @@ h1>p {
 #gnb ul li {
     padding: 0 12px;
     font-size: 21px;
+    display: inline-block;
+    position: relative;
 }
-#gnb ul li a:hover {
-    border-bottom: 4px solid #f0f4f5;
+#gnb ul li a:after {
+    position: absolute; 
+    content:""; 
+    display: block; 
+    border-bottom: 4px solid #f0f4f5; 
+    transition: all 300ms ease-out; 
+    left: 50%; 
+    top: 60px;
+    width: 0;
+}
+#gnb ul li a:hover:after{
+    transition: all 300ms ease-out; 
+    left: 0%; 
+    width: 100%;
 }
 
 
@@ -90,55 +108,48 @@ section {
     height: 100%;
     margin: 0 auto;
 }
+section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+/* 2-1. ABOUT ME */
 .aboutme {
     width: 1440px;
     height: 800px;
-    margin-top: 100px;
+    margin-top: 40px;
 }
-.l_am {
-    width: 720px;
-    /* 플롯 */
-    float: left;
-}
-.l_am .am_icon {
+.am_icon {
     width: 220px;
     margin-bottom: 60px;
 }
-.l_am .am_icon img {
+.am_icon img {
     width: 100%;
 }
-.l_am .am_text h2,
-.l_am .am_text p {
+.am_text h2,
+.am_text p {
     font-size: 40px;
     line-height: 48px;
     font-weight: 500;
+    margin-bottom: 8px;
 }
-.r_am {
-    width: 720px;
-    /* 플롯 */
-    float: right;
-    padding-left: 80px;
-}
-.r_am img {
-    width: 80%;
-}
-.am_line {
+.arrowDown {
     display: block;
-    width: 4px;
-    height: 140px;
-    background-color: #000;
-    clear: both;
     position: relative;
-    left: 50%;
+    margin-left: 50%;
+    margin-top: 200px;
 }
-/* SKILLS */
+.arrowDown i {
+    font-size: 60px;
+    color: #64598b;
+}
+/* 2-2. SKILLS */
 .skills { 
     margin-top: 190px;
     width: 100%;
     height: 100%;
 }
 .sk_top {
-    height: 872px;
+    height: 800px;
 }
 .sk_icon {
     margin-bottom: 30px;
@@ -164,12 +175,17 @@ section {
     /* 플롯 */
     float: right;
 }
+.sk_right img {
+    width: 100px;
+    height: 100px;
+}
 .sk_right h3 {
     font-size: 40px;
     margin-bottom: 20px;
 }
 .sk_right p {
     font-size: 24px;
+    margin-bottom: 20px;
 }
 .sk_right .html5,
 .sk_right .css3,
@@ -177,10 +193,6 @@ section {
     /* 플렉스 */
     display: flex;
     margin-bottom: 80px;
-}
-.sk_right img {
-    width: 100px;
-    height: 100px;
 }
 .sk_right .html5>div,
 .sk_right .css3>div,    
@@ -194,33 +206,23 @@ section {
     height: 872px;
     margin: 0 160px;
 }
-.sk_bottom .sk_design {
-    width: 900px;
-    /* 플렉스 */
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.sk_bottom img {
-    width: 100px;
-}
 .sk_bottom p {
-    font-size: 40px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 .sk_design {
     margin-bottom: 70px;
 }
-.sk_design div img {
+.sk_design img {
+    margin-right: 20px;
     margin-bottom: 36px;
 }
 .sk_ms img {
-    margin-right: 240px;
+    margin-right: 20px;
     margin-bottom: 36px;
 }
 
-/* PORTFOLIO */
+/* 2-3. PORTFOLIO */
 .portfolio {
     width: 100%;
     height: 100%;
@@ -256,7 +258,7 @@ section {
     height: 440px;
     /* 플롯 */
     float: right;
-    padding: 80px 0 0 40px;
+    padding: 80px 0 0 100px;
     margin-bottom: 160px;
 }
 .info h3 {
@@ -290,7 +292,87 @@ section {
 .info .btn .proposal a:hover,
 .info .btn .direct a:hover {
     background-color: var(--accent-color);
-    border: 4px solid var(--h-color);
+    color: var(--h-color);
+    transition: all 0.3s;
+}
+.renewalMac .info .btn{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/* 2-4. CONTACT */
+.contact {
+    width: 100%;
+    height: 100%;
+}
+.ctImg {
+    width: 720px;
+    /* 플롯 */
+    float: left;
+    padding-left: 300px;
+}
+.ctInfo {
+    margin-top: 60px;
+    width: 720px;
+    /* 플롯 */
+    float: right;
+}
+.ctInfo h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.ctInfo h2>span {
+    font-size: 32px;
+}
+.ctInfo p {
+    font-size: 24px;
+    margin-bottom: 36px;
+}
+.ctIcon>li {
+    width: 120px;
+    /* 플롯 */
+    float: left;
+}
+/* 2-5. Outro */
+.outro {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* 3. Footer */
+.footer {
+    margin-top: 90px;
+    width: 100%;
+    height: 60px;
+    background-color: #434343;
+}
+.footer p {
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--h-color);
+}
+
+/* GO TO TOP BUTTON */
+aside div {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--background-color);
+    text-align: center;
+    border-radius: 30px;
+    /* 포지션 */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    /*로딩 시 안 보이도록 코딩 */
+    display: none;
+}
+aside div a {
+    display: inline-block;
+    font-weight: bold;
     color: var(--h-color);
 }
 
