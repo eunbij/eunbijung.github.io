@@ -332,6 +332,11 @@ section h2 {
     width: 120px;
     /* 플롯 */
     float: left;
+    text-align: center;
+}
+.ctIcon>li>p {
+    font-size: 16px;
+    margin-top: 4px;
 }
 /* 2-5. Outro */
 .outro {
@@ -339,7 +344,18 @@ section h2 {
     height: 100%;
     text-align: center;
 }
-
+.outroText {
+    width: 900px;
+    height: 300px;
+    margin: 300px auto;
+}
+.outroText p {
+    font-size: 52px;
+    color: #000;
+}
+.outroText p:last-child {
+    margin: 16px 0;
+}
 /* 3. Footer */
 .footer {
     margin-top: 90px;
