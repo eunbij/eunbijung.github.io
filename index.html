@@ -57,6 +57,7 @@
             <!-- GNB -->
             <nav id="gnb">
                 <ul>
+                    <li><a href="#home">HOME</a></li>
                     <li><a href="#aboutme">ABOUT ME</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -72,13 +73,13 @@
         <!-- /1. Header -->
         <!-- 2. Section -->
         <section>
-            <!-- 2-1. ABOUT ME -->
-            <div class="aboutme" id="aboutme">
+            <!-- 2-1. HOME -->
+            <div class="home" id="home">
                 <div class="h120"></div>
-                <div class="am_icon">
+                <div class="homeIcon">
                     <img src="./images/profile.png" alt="프로필아이콘">
                 </div>
-                <div class="am_text">
+                <div class="homeText">
                     <h2>안녕하세요.</h2>
                     <p>웹퍼블리셔 정은비입니다.</p>
                     <p>포트폴리오 페이지에 오신 걸 환영합니다.</p>
@@ -87,46 +88,84 @@
                     <i class="fa fa-angle-double-down" aria-hidden="true"></i>
                 </div>
             </div>
-            <!-- /ABOUT ME -->
-            <!-- 2-2. SKILLS -->
-            <div class="skills" id="skills">
+            <!-- /HOME -->
+            <!-- 2-2. ABOUT ME -->
+            <div class="aboutme" id="aboutme">
                 <div class="h120"></div>
-                <h2>SKILLS</h2>
-                <div class="sk_top cf">
-                    <div class="sk_left">
-                        <div class="sk_icon">
-                            <img src="./images/steps.png" alt="스킬아이콘">
+                <h2>ABOUT ME</h2>
+                <div class="amContents">
+                    <div>
+                        <div class="amIcon">
+                            <img src="./images/steps.png" alt="ABOUTME아이콘">
                         </div>
-                        <div class="sk_text">
+                        <div class="amText">
+                            <h3>자격사항</h3>
                             <p>2021.11.~2022.03. 모바일웹&앱디자인 NCS과정 수료</p>
                             <p>2022.01. 웹디자인기능사 필기 합격</p>
                             <p>2022.01. 컴퓨터그래픽스운용기능사 필기 합격</p>
                         </div>
                     </div>
-                    <div class="sk_right">
+                    <div class="amCareer">
+                        <div class="amIcon">
+                            <img src="./images/career.png" alt="스킬아이콘">
+                        </div>
+                        <h3>경력사항</h3>
+                        <ul>
+                            <li>2019.09.~2021.08. 이화여자대학교 통역번역연구소 근무
+                                <ul>
+                                    <li>통역 수주 관리 및 행정 업무 제반, 비학위 과정 운영 및 회계 업무 </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>2016.11.~2017.11. 을지대학교 입학관리처 근무
+                                <ul>
+                                    <li>입학 상담 및 입학 홍보, 입시 박람회, 방문 설명회 기획 등</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>                
+                </div>
+            </div>
+            <!-- /ABOUT ME -->
+            <!-- 2-3. SKILLS -->
+            <div class="skills" id="skills">
+                <div class="h120"></div>
+                <h2>SKILLS</h2>
+                <div class="skWeb cf">
+                    <div class="webLeft">
                         <div class="html5">
                             <img src="./images/html-5.png" alt="HTML5">
                             <div>
                                 <h3>HTML5</h3>
+                                <div class="skillBar"><div data-width="90" style="">&nbsp;<span class="span">90%</span></div></div>
                                 <p>시맨틱 태그를 이용하여 구조를 코딩할 수 있습니다.</p>
                                 <p>웹 접근성에 기반하는 작업에 관심이 높습니다.</p>
+                                <p>&nbsp;</p>
                             </div>
                         </div>
                         <div class="css3">
                             <img src="./images/css-3.png" alt="CSS3">
                             <div>
                                 <h3>CSS3</h3>
+                                <div class="skillBar"><div data-width="90" style="">&nbsp;<span class="span">90%</span></div></div>
                                 <p>CSS를 이용하여 효과를 구현할 수 있습니다.</p>
+                                <p>flex, float을 활용한 웹사이트 레이아웃 배치가 가능합니다.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="webRight">
                         <div class="js">
                             <img src="./images/java-script.png" alt="javaScript">
                             <div>
                                 <h3>javaScript&amp;jQuery</h3>
+                                <div class="skillBar"><div data-width="85" style="">&nbsp;<span class="span">85%</span></div></div>
                                 <p>javaScript를 이용한 동적 효과를 구현할 수 있습니다.</p>
                                 <p>jQuery 세팅과 원리 및 플러그인을 사용할 수 있습니다.</p>
+                                <p>javaScript를 활용한 <span><a href="#">미니 프로젝트</a></span>를 연습하고 있습니다.</p>
                                 <div class="vue">
                                     <h3>Vue.js</h3>
+                                    <div class="skillBar"><div data-width="65" style="">&nbsp;<span class="span">65%</span></div></div>
                                     <p>Vue.js의 설치 방법 및 기초 원리를 알고 있습니다.</p>
                                     <p>Vue.js를 이용한 API 데이터 접근을 할 수 있습니다.</p>
                                 </div>
@@ -134,25 +173,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="sk_bottom">
+                <div class="skTools">
                     <div class="sk_design">
                         <img src="./images/photoshop.png" alt="포토샵">
                         <img src="./images/illustrator.png" alt="일러스트레이터">
                         <img src="./images/xd.png" alt="XD">
                         <p>Adobe Photoshop, Adobe Illustrator, Adobe XD를 이용할 줄 알고</p>
-                        <p>UI/UX를 고려한 디자인 제작에 관심도가 높습니다.</p>
+                        <p>와이어프레임 작업을 통해 디자인 시안을 미리 구현할 줄 알며, UI/UX를 고려한 디자인 제작에 관심도가 높습니다.</p>
                     </div>
                     <div class="sk_ms">
                         <img src="./images/word.png" alt="MS워드">
                         <img src="./images/excel.png" alt="MS엑셀">
                         <img src="./images/powerpoint.png" alt="MS파워포인트">
-                        <p>MS Word, Ms Excels, Ms Powerpoint를 비롯한 </p>
-                        <p>여러 문서 작성 툴을 능숙하게 사용할 수 있습니다.</p>
+                        <p>MS Word, Ms Excels, Ms Powerpoint를 비롯한 다양한 문서 작성 툴을 능숙하게 사용할 수 있습니다.</p>
                     </div>
                 </div>
             </div>
             <!-- /SKILLS -->
-            <!-- 2-3. PORTFOLIO -->
+            <!-- 2-4. PORTFOLIO -->
             <div class="portfolio" id="portfolio">
                 <div class="h120"></div>
                 <h2>PORTFOLIO</h2>
@@ -283,7 +321,7 @@
                 </div>
             </div>
             <!-- /PORTFOLIO -->
-            <!-- 2-4. CONTACT -->
+            <!-- 2-5. CONTACT -->
             <div class="contact cf" id="contact">
                 <div class="h120"></div>
                 <h2>CONTACT</h2>
@@ -306,7 +344,7 @@
                 </div>
             </div>
             <!-- /CONTACT -->
-            <!-- 2-5. Outro -->
+            <!-- 2-6. Outro -->
             <div class="outro">
                 <div class="h120"></div>
                 <div class="outroText">

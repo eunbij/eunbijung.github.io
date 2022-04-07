@@ -41,12 +41,25 @@ window.onload = ()=>{
     // ABOUT ME
     setInterval(() => {
         $('.arrowDown').stop().animate({bottom:'-40px'},800,function(){
-            $('.aboutme div').eq(-1).appendTo('.arrowDown');
+            $('.home div').eq(-1).appendTo('.arrowDown');
             $('.arrowDown').animate({bottom:'20px'},500);
         });
     }, 1500);
 
-    
-
+    // SKILLS
+    function animatedContents(){
+        $('.skillBar div').each(function(i){
+            var $this = $(this),
+                skills = $this.data('width');
+            $this.css({'width':skills+'%'});
+        });
+    };
+        if($().appear){
+            $('.skillBar').appear().on('appear',function(){
+                animatedContents();
+            });
+        }else{
+            animatedContents();
+        }
 
 };

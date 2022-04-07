@@ -112,21 +112,21 @@ section h2 {
     font-size: 40px;
     margin-bottom: 40px;
 }
-/* 2-1. ABOUT ME */
-.aboutme {
+/* 2-1. HOME */
+.home {
     width: 1440px;
     height: 800px;
     margin-top: 40px;
 }
-.am_icon {
+.homeIcon {
     width: 220px;
     margin-bottom: 60px;
 }
-.am_icon img {
+.am_iconhomeIcon img {
     width: 100%;
 }
-.am_text h2,
-.am_text p {
+.homeText h2,
+.homeText p {
     font-size: 40px;
     line-height: 48px;
     font-weight: 500;
@@ -142,71 +142,107 @@ section h2 {
     font-size: 60px;
     color: #64598b;
 }
-/* 2-2. SKILLS */
+/* 2-2. ABOUT ME */
+.aboutme {
+    margin-top: 190px;
+    width: 100%;
+    height: 100%;
+}
+.amContents {
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.amContents h3 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    color: var(--accent-color);
+}
+.amIcon {
+    margin-bottom: 30px;
+}
+.amIcon img {
+    width: 220px;
+}
+.amText {
+    width: 680px;
+    margin-left: 20px;
+
+}
+.amText h2 {
+    font-size: 42px;
+    margin-bottom: 34px;
+}
+.amText p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.amCareer {
+    width: 680px;
+    margin-left: 20px;
+}
+.amCareer li {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.amCareer li>ul>li {
+    font-size: 20px;
+    margin-top: 12px;
+}
+/* 2-3. SKILLS */
 .skills { 
     margin-top: 190px;
     width: 100%;
     height: 100%;
 }
-.sk_top {
-    height: 800px;
+.skWeb {
+    margin-bottom: 32px;
 }
-.sk_icon {
-    margin-bottom: 30px;
-}
-.sk_icon img {
-    width: 220px;
-}
-.sk_text h2 {
-    font-size: 42px;
-    margin-bottom: 34px;
-}
-.sk_text p {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.sk_left {
+.webLeft {
     width: 720px;
     /* 플롯 */
     float: left;
 }
-.sk_right {
+.webRight {
     width: 720px;
     /* 플롯 */
     float: right;
 }
-.sk_right img {
+.skWeb img {
     width: 100px;
     height: 100px;
 }
-.sk_right h3 {
+.skWeb h3 {
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
-.sk_right p {
+.skWeb p {
     font-size: 24px;
     margin-bottom: 20px;
 }
-.sk_right .html5,
-.sk_right .css3,
-.sk_right .js {
+.skWeb .html5,
+.skWeb .css3,
+.skWeb .js {
     /* 플렉스 */
     display: flex;
     margin-bottom: 80px;
 }
-.sk_right .html5>div,
-.sk_right .css3>div,    
-.sk_right .js>div { 
+.skWeb .html5>div,
+.skWeb .css3>div,    
+.skWeb .js>div { 
     margin-left: 32px;
 }
-.sk_right .js .vue {
-    margin-top: 40px;
+.skWeb .js p a {
+    color: var(--accent-color);
 }
-.sk_bottom {
+.skWeb .js .vue {
+    margin-top: 100px;
+}
+.skTools {
     height: 872px;
     margin: 0 160px;
 }
-.sk_bottom p {
+.skTools p {
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -221,8 +257,49 @@ section h2 {
     margin-right: 20px;
     margin-bottom: 36px;
 }
+/* 막대그래프 */
+.skillBar {
+    color: var(--h-color);
+    font-size: 18px;
+    line-height: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+.skillBar * {
+    transition: all 0.5s ease;
+}
 
-/* 2-3. PORTFOLIO */
+.skillBar div {
+    background-color: #B9FF38;
+    position: relative;
+    padding-left: 25px;
+    width: 0;
+    border-radius: 2px;
+}
+.skillBar span {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5px 0 10px;
+    background-color: #371F8C;
+    border-radius: 0 2px 2px 0;
+}
+.skillBar span::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: -8px;
+    margin-top: -3px;
+    background-color: #371F8C;
+    transform: rotate(45deg) translateY(-6px);
+}
+/* 2-4. PORTFOLIO */
 .portfolio {
     width: 100%;
     height: 100%;
@@ -300,7 +377,7 @@ section h2 {
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-/* 2-4. CONTACT */
+/* 2-5. CONTACT */
 .contact {
     width: 100%;
     height: 100%;
@@ -338,7 +415,7 @@ section h2 {
     font-size: 16px;
     margin-top: 4px;
 }
-/* 2-5. Outro */
+/* 2-6. Outro */
 .outro {
     width: 100%;
     height: 100%;
