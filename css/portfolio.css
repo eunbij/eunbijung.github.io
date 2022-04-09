@@ -16,7 +16,6 @@ body {
     font-family: 'GmarketSansMedium','Noto Sans KR',sans-serif;
     color: var(--text-color);
     letter-spacing: -1px;
-    background-color: #fffbd6;
 }
 #wrap {
     width: 100%;
