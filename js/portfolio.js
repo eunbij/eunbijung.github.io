@@ -10,6 +10,9 @@ window.onload = ()=>{
         gnb.classList.toggle('active');
     });
 
+    $('#gnb+a').click(function(e){
+        e.preventDefault();
+    });
 
     // GO TO TOP BUTTON
     //1. 부드러운 메뉴이동 => ScrollTo 플러그인

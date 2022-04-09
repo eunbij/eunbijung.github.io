@@ -16,6 +16,7 @@ body {
     font-family: 'GmarketSansMedium','Noto Sans KR',sans-serif;
     color: var(--text-color);
     letter-spacing: -1px;
+    background-color: #fffbd6;
 }
 #wrap {
     width: 100%;
@@ -387,19 +388,18 @@ section h2 {
     color: var(--h-color);
     transition: all 0.3s;
 }
-.renewalMac .info .btn{
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
 .info .btn {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     /* 플렉스 */
     display: flex;
     justify-content: space-between;
-
+}
+.renewalMac .info .btn{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 /* 2-5. CONTACT */
 .contact {
@@ -520,6 +520,7 @@ aside div a {
         display: flex;
         flex-direction: column;
         display: none;
+        background-color: var(--background-color);
     }
     #gnb ul li {
         width: 100%;
@@ -544,13 +545,17 @@ aside div a {
     .amContents {
         display: block;
     }
+    .homeText h2,
+    .homeText p {
+        font-size: 32px;
+    }
     .amCert {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 36px;
     }
     .amCareer {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
     /* 2-3. SKILLS */
@@ -598,10 +603,20 @@ aside div a {
     }
     
     /* 2-5. CONTACT */
+    .ctCtns {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
     .ctImg {
+        width: 100%;
         padding-left: 40px;
     }
-
-
-
+    .ctInfo {
+        width: 100%;
+    }
+    /* 2-6. Outro */
+    .outroText {
+        width: 85.333333%;
+    }
 }
