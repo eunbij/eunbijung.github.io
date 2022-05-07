@@ -29,6 +29,8 @@
     <!-- <link rel="stylesheet" href="./css/system_font.css"> -->
     <!-- No Scrollbar CSS -->
     <!-- <link rel="stylesheet" href="./css/no_scrollbar.css"> -->
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- 프로젝트 페이지 CSS -->
     <link rel="stylesheet" href="./css/portfolio.css">
     <!-- HTML5 JS File -->
@@ -40,6 +42,8 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <!-- PreFix Free -->
     <script src="./js/prefixfree.min.js"></script>
+    <!-- JQ PlugIn - AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JQ PlugIn - ScrollTo JS -->
     <script src="./js/jquery.scrollTo.min.js"></script>
     <!-- 프로젝트 페이지 SCRIPT -->
@@ -79,7 +83,7 @@
                 <div class="homeIcon">
                     <img src="./images/profile.png" alt="프로필아이콘">
                 </div>
-                <div class="homeText">
+                <div class="homeText" data-aos="fade-down" data-aos-duration="2000">
                     <h2>안녕하세요.</h2>
                     <p>웹퍼블리셔 정은비입니다.</p>
                     <p>포트폴리오 페이지에 오신 걸 환영합니다.</p>
@@ -94,7 +98,7 @@
                 <div class="h120"></div>
                 <h2>ABOUT ME</h2>
                 <div class="amContents">
-                    <div class="amCert">
+                    <div class="amCert" data-aos="fade-right" data-aos-duration="1500">
                         <div class="amIcon">
                             <img src="./images/steps.png" alt="ABOUTME아이콘">
                         </div>
@@ -105,7 +109,7 @@
                             <p><span>2022.01.</span> 컴퓨터그래픽스운용기능사 필기 합격</p>
                         </div>
                     </div>
-                    <div class="amCareer">
+                    <div class="amCareer" data-aos="fade-left" data-aos-duration="2000">
                         <div class="amIcon">
                             <img src="./images/career.png" alt="스킬아이콘">
                         </div>
@@ -199,7 +203,7 @@
                 <div class="publising cf">
                     <h2>WEB PUBLISHING</h2>
                     <div class="pflist">
-                        <div class="mockupimg">
+                        <div class="mockupimg" data-aos="zoom-in" data-aos-duration="500">
                             <img src="./images/animalcrossing.png" alt="목업1">
                         </div>
                         <div class="info">
@@ -214,7 +218,7 @@
                         </div>
                     </div>
                     <div class="pflist">
-                        <div class="mockupimg">
+                        <div class="mockupimg" data-aos="zoom-in" data-aos-duration="500">
                             <img src="./images/fila.png" alt="목업2">
                         </div>
                         <div class="info">
@@ -229,7 +233,7 @@
                         </div>
                     </div>
                     <div class="pflist">
-                        <div class="mockupimg">
+                        <div class="mockupimg" data-aos="zoom-in" data-aos-duration="500">
                             <img src="./images/odcompany.png" alt="목업3">
                         </div>
                         <div class="info">
@@ -244,7 +248,7 @@
                         </div>
                     </div>
                     <div class="pflist">
-                        <div class="mockupimg">
+                        <div class="mockupimg" data-aos="zoom-in" data-aos-duration="500">
                             <img src="./images/aquarium.png" alt="목업4">
                         </div>
                         <div class="info">
@@ -259,7 +263,7 @@
                         </div>
                     </div>
                     <div class="pflist">
-                        <div class="mockupimg">
+                        <div class="mockupimg" data-aos="zoom-in" data-aos-duration="500">
                             <img src="./images/casper.png" alt="목업5">
                         </div>
                         <div class="info">
@@ -274,7 +278,7 @@
                         </div>
                     </div>
                     <div class="pflist">
-                        <div class="mockupimg">
+                        <div class="mockupimg" data-aos="zoom-in" data-aos-duration="500">
                             <img src="./images/vueghibli.png" alt="목업6">
                         </div>
                         <div class="info">
@@ -292,7 +296,7 @@
                 <div class="design cf">
                     <h2>WEB DESIGN</h2>
                     <div class="renewalMac pflist">
-                        <div class="mockupimg">
+                        <div class="mockupimg" data-aos="zoom-in" data-aos-duration="500">
                             <img src="./images/renewaldesign.png" alt="리뉴얼디자인목업">
                         </div>
                         <div class="info">
@@ -307,7 +311,7 @@
                         </div>
                     </div>
                     <div class="pflist">
-                        <div class="mockupimg">
+                        <div class="mockupimg" data-aos="zoom-in" data-aos-duration="500">
                             <img src="./images/appdesign.png" alt="앱디자인목업">
                         </div>
                         <div class="info">
@@ -351,7 +355,7 @@
             <!-- 2-6. Outro -->
             <div class="outro">
                 <div class="h120"></div>
-                <div class="outroText">
+                <div class="outroText" data-aos="flip-right">
                     <p>감사합니다</p>
                     <p>THANK YOU!</p>
                 </div>
@@ -373,5 +377,8 @@
         </aside>
         <!-- /GO TO TOP BUTTON -->
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
